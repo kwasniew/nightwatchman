@@ -8,6 +8,7 @@
   "parallel_process_delay" : 10,
   "disable_colors": false,
   "test_workers" : false,
+  "page_objects_path": "./fasten/pages",
 
   "selenium" : {
     "start_process" : true,
@@ -16,7 +17,7 @@
     "host" : "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "./lib/drivers/chromedriver_travis",
+      "webdriver.chrome.driver" : "./lib/drivers/chromedriver_local",
       "webdriver.ie.driver" : "",
       "webdriver.firefox.profile" : ""
     }
