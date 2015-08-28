@@ -11,12 +11,12 @@
 
   "selenium" : {
     "start_process" : true,
-    "server_path" : "selenium-server-standalone-2.44.0.jar",
+    "server_path" : "./lib/sel-serv.jar",
     "log_path" : "logs",
     "host" : "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "",
+      "webdriver.chrome.driver" : "./lib/drivers/chromedriver_travis",
       "webdriver.ie.driver" : "",
       "webdriver.firefox.profile" : ""
     }
@@ -34,7 +34,7 @@
         "path" : ""
       },
       "desiredCapabilities" : {
-        "browserName" : "firefox",
+        "browserName" : "chrome",
         "javascriptEnabled" : true,
         "acceptSslCerts" : true
       }
@@ -90,5 +90,3 @@
     }
   }
 }
-
-
