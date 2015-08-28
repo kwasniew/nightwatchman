@@ -14,9 +14,8 @@ before_script:
   - npm install
 
 script:
-  - npm test
+  - npm test_travis
   # - npm run-script coverage
 
 after_success:
   # - cat ./lib-cov/lcov.info |coveralls
-

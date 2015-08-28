@@ -48,6 +48,7 @@
   "scripts": {
     "jshint": "./node_modules/.bin/jshint --verbose --config .jshintrc lib/",
     "coverage": "jscoverage lib --exclude *.ejs,*.json && NIGHTWATCH_COV=1 node ./tests/run_tests.js lcov > ./lib-cov/lcov.info",
-    "test": "node ./bin/nightwatch"
+    "test_travis": "node ./bin/nightwatch",
+    "test": "node ./bin/nightwatch --env local"
   }
 }
